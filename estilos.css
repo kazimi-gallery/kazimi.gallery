@@ -1,0 +1,179 @@
+/* General */
+body {
+    font-family: 'Lekton', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Estilos del Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: transparent;
+    
+}
+
+.header h1 a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    width: 30px; /* Tamaño del icono */
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Espacio entre enlaces */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block; /* Los enlaces permanecen en línea */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    transition: font-style 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+    font-style: italic;
+    color: #555; /* Cambia de color al pasar el cursor */
+}
+
+/* Sección principal */
+#main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.text {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 20px;
+}
+
+.image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Secciones */
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+/* Biografía */
+.bio-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 20px;
+    padding: 20px;
+}
+
+.bio-image {
+    flex: 1;
+    max-width: 40%;
+}
+
+.bio-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+ 
+}
+
+.bio-text {
+    flex: 2;
+    max-width: 60%;
+}
+
+.bio-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.bio-text p {
+    line-height: 1.6;
+}
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Estilos para las subpáginas */
+.subpage-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.subpage-header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.subpage-header p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Proyectos: Diseño de lista */
+.project-list {
+    list-style: none;
+    padding: 0;
+}
+
+.project-list li {
+    margin: 10px 0;
+}
+
+.project-list a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.project-list a:hover {
+    color: #555;
+    font-style: italic;
+}
