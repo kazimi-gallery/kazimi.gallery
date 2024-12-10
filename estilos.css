@@ -158,13 +158,15 @@ section {
     line-height: 1.6;
 }
 
+main {
+    flex: 1;  /* Hace que el contenido ocupe todo el espacio disponible */
+}
 
-
-/* Footer */
+/* Pie de página */
 footer {
-    text-align: center;
-    padding: 10px 20px;
     background-color: #f4f4f4;
+    padding: 10px 20px;
+    text-align: center;
     color: #777;
     font-size: 0.9rem;
 }
