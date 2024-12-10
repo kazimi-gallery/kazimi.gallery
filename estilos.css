@@ -8,6 +8,37 @@ body {
 }
 
 /* Estilos del Header */
+
+/* Estilo para todos los encabezados h1, h2, h3, etc. */
+h1, h2, h3 {
+    font-family: 'Lekton', sans-serif; /* Puedes elegir la fuente que prefieras */
+    color: #333; /* Color del texto */
+    font-weight: bold; /* Peso de la fuente */
+}
+
+/* Estilo específico para h1 (título principal) */
+h1 {
+    font-size: 2.5rem; /* Tamaño de fuente grande */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+/* Estilo específico para h2 (subtítulos) */
+h2 {
+    font-size: 2rem; /* Tamaño de fuente mediano */
+    color: #555; /* Color de texto más claro */
+    margin-bottom: 15px;
+}
+
+/* Estilo específico para h3 (subsubtítulos) */
+h3 {
+    font-size: 1.5rem; /* Tamaño de fuente más pequeño */
+    color: #777; /* Color más suave para los subencabezados */
+    font-weight: normal; /* Peso de la fuente normal */
+    margin-bottom: 10px;
+}
+
+/* Puedes seguir ajustando los estilos para otros encabezados */
+
 .header {
     display: flex;
     justify-content: space-between;
