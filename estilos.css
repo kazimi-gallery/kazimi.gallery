@@ -208,3 +208,83 @@ footer {
     color: #555;
     font-style: italic;
 }
+
+
+/* Estilo para la sección de contacto */
+#contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Estilo para la lista de redes sociales */
+#social-media {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#social-media h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+ul.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+ul.social-links li {
+    display: inline;
+    margin-right: 15px;
+}
+
+ul.social-links a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+ul.social-links a:hover {
+    color: #007BFF; /* Color al pasar el ratón sobre el enlace */
+}
