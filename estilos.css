@@ -227,7 +227,7 @@ footer {
 form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     gap: 10px;
     max-width: 600px;
     margin: 0 auto;
@@ -263,7 +263,7 @@ form button:hover {
 /* Estilo para la lista de redes sociales */
 #social-media {
     padding: 40px 20px;
-    text-align: center;
+    text-align: left;
 }
 
 #social-media h2 {
