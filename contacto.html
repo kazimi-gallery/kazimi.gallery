@@ -1,26 +1,68 @@
-<section id="contact">
-    <h2>Contacto</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Kazimi Gallery</title>
 
-    <!-- Formulario de contacto -->
-    <form action="mailto:tucorreo@dominio.com" method="post" enctype="text/plain">
-        <label for="name">name:</label>
-        <input type="text" id="name" name="name" required><br>
+    <!-- Favicon -->
+    <link rel="icon" href="faviconkazimi.png" type="image/png">
 
-        <label for="email">e-mail:</label>
-        <input type="email" id="email" name="email" required><br>
+    <!-- Fuente Lekton desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lekton&display=swap" rel="stylesheet">
 
-        <label for="message">message:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+    <!-- Hoja de estilos personalizada -->
+    <link href="estilos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado y navegación -->
+    <header class="header">
+        <h1><a href="index.html">Kazimi Gallery</a></h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="bio.html">Bio</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <button type="submit">send</button>
-    </form>
-</section>
+    <main>
+        <section id="contact">
+            <h2>Contáctame</h2>
 
-<section id="social-media">
-    <h2>Sígueme</h2>
-    <ul class="social-links">
-        <li><a href="https://www.instagram.com/kazimi.gallery/" target="_blank">instagram</a></li>
-        <li><a href="https://pin.it/3F6tAxO43" target="_blank">pinterest</a></li>
-  
-    </ul>
-</section>
+            <!-- Formulario de contacto -->
+            <form action="submit_form.php" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Enviar</button>
+            </form>
+
+            <!-- Redes sociales -->
+            <div class="social-media">
+                <h3>my social media:</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/kazimi.gallery" target="_blank">instagram</a></li>
+                    <li><a href="https://es.pinterest.com/janakazimir" target="_blank">pinterest</a></li>
+            
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kazimi Gallery</p>
+    </footer>
+</body>
+</html>
