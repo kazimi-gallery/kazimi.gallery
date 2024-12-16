@@ -8,72 +8,71 @@ body {
 }
 
 /* Estilos del Header */
-
-/* Estilo para todos los encabezados h1, h2, h3, etc. */
 h1, h2, h3 {
-    font-family: 'Lekton', sans-serif; /* Puedes elegir la fuente que prefieras */
-    color: #333; /* Color del texto */
-    font-weight: bold; /* Peso de la fuente */
+    font-family: 'Lekton', sans-serif;
+    color: #333;
+    font-weight: bold;
 }
 
-/* Estilo específico para h1 (título principal) */
 h1 {
-    font-size: 2.5rem; /* Tamaño de fuente grande */
-    margin-bottom: 20px; /* Espacio debajo del título */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
-/* Estilo específico para h2 (subtítulos) */
 h2 {
-    font-size: 2rem; /* Tamaño de fuente mediano */
-    color: #555; /* Color de texto más claro */
+    font-size: 2rem;
+    color: #555;
     margin-bottom: 15px;
 }
 
-/* Estilo específico para h3 (subsubtítulos) */
 h3 {
-    font-size: 1.5rem; /* Tamaño de fuente más pequeño */
-    color: #777; /* Color más suave para los subencabezados */
-    font-weight: normal; /* Peso de la fuente normal */
+    font-size: 1rem;
+    color: ##808080;
+    font-weight: bold;
     margin-bottom: 10px;
 }
-
-/* Puedes seguir ajustando los estilos para otros encabezados */
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10px;
-    background-color: transparent;
-    
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
 }
 
-.header h1 a {
-    text-decoration: none;
-    color: #333;
+.header h1 {
     font-size: 1.5rem;
+    margin: 0;
     font-weight: bold;
+    color: #333;
     display: flex;
     align-items: center;
 }
 
-.header img {
-    width: 30px; /* Tamaño del icono */
-    height: auto;
-    margin-right: 10px;
+.header h1 a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-/* Barra de navegación */
+.header img {
+    width: 40px;
+    height: auto;
+}
+
 .navbar {
     display: flex;
     list-style: none;
-    gap: 20px; /* Espacio entre enlaces */
+    gap: 20px;
     margin: 0;
     padding: 0;
 }
 
 .navbar li {
-    display: inline-block; /* Los enlaces permanecen en línea */
+    display: inline-block;
 }
 
 .navbar a {
@@ -87,206 +86,223 @@ h3 {
 
 .navbar a:hover {
     font-style: italic;
-    color: #555; /* Cambia de color al pasar el cursor */
-}
-
-/* Sección principal */
-#main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 20px;
-    flex-wrap: wrap;
-}
-
-.text {
-    flex: 1;
-    max-width: 50%;
-    padding-right: 20px;
-}
-
-.image {
-    flex: 1;
-    max-width: 50%;
-}
-
-.hero-image img {
-    width: 100%;
-    height: auto;
-}
-
-/* Secciones */
-section {
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: auto;
-    text-align: left;
-}
-
-/* Biografía */
-.bio-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    gap: 20px;
-    padding: 20px;
-}
-
-.bio-image {
-    flex: 1;
-    max-width: 40%;
-}
-
-.bio-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
- 
-}
-
-.bio-text {
-    flex: 2;
-    max-width: 60%;
-}
-
-.bio-text h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.bio-text p {
-    line-height: 1.6;
-}
-
-main {
-    flex: 1;  /* Hace que el contenido ocupe todo el espacio disponible */
-}
-
-/* Pie de página */
-footer {
-    background-color: #f4f4f4;
-    padding: 10px 20px;
-    text-align: center;
-    color: #777;
-    font-size: 0.9rem;
-}
-
-/* Estilos para las subpáginas */
-.subpage-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
-.subpage-header h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-}
-
-.subpage-header p {
-    font-size: 1.1rem;
     color: #555;
 }
 
-/* Proyectos: Diseño de lista */
-.project-list {
+/* Espacio entre la barra de navegación y el contenido */
+main {
+    margin-top: 30px; /* Espacio entre la barra de navegación y el contenido */
+}
+
+/* Página principal (Index) y Bio */
+
+
+.main-content, .bio-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.main-text, .bio-text {
+    flex: 1;
+    max-width: 40%;
+    text-align:justify;
+}
+
+.main-text h2, .bio-text h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.main-text p, .bio-text p {
+    font-size: 1rem;
+    line-height: 1.4;
+    marign: o;
+
+}
+
+.main-image, .bio-image {
+    flex: 1;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.main-image img,
+.bio-image img {
+    max-height: 600px;
+    width: auto; /* Ajusta el ancho automáticamente */
+    display: block;
+    object-fit: contain; /* Escala la imagen sin recortarla */
+}
+
+/* Página de proyectos */
+
+/* Reglas comunes para los proyectos */
+.proyecto-image {
+    flex: 1;
+    width: calc(100% - 300px); /* La imagen empieza después del menú lateral */
+    height: 100vh; /* La imagen ocupa toda la altura de la ventana */
+    object-fit: cover;
+    margin-left: 300px; /* El margen asegura que la imagen comience después del menú lateral */
+}
+
+.proyecto-image img {
+    width: 100%;
+    height: 100%; /* La imagen ocupa toda la altura disponible */
+    object-fit: cover;
+}
+
+.proyecto-text {
+    flex: 1;
+    max-width: 40%;
+    padding: 20px;
+    margin-left: 320px; /* Espacio para el menú lateral */
+}
+
+.proyecto-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.proyecto-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Layout para los proyectos */
+.proyecto-main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    margin-left: 300px; /* Asegura que el contenido no se solape con el menú lateral */
+}
+
+/* Página de proyectos */
+
+/* Contenido principal */
+.proyecto-main-content {
+    display: flex;
+    flex-direction: column; /* Alineación en columna */
+    padding: 40px;
+    margin-left: 300px; /* Este margen asegura que el contenido empiece después del menú */
+}
+
+/* Imagen principal del proyecto */
+.proyecto-main-image {
+    width: 80%; /* La imagen ocupará el 80% del espacio disponible */
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+.proyecto-main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Pie de foto */
+.project-caption {
+    font-size: 1rem;
+    text-align: center;
+    color: #777;
+    margin-bottom: 40px; /* Separación entre el pie de foto y el texto explicativo */
+}
+
+/* Texto explicativo */
+.proyecto-main-text {
+    width: 80%; /* El texto ocupa el 80% del ancho disponible */
+    max-width: 800px; /* Limita el ancho máximo */
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+
+}
+
+/* Menú lateral */
+.menu-lateral {
+    width: 300px;
+    background-color: none;
+    padding: 20px;
+    position: fixed; /* Fija el menú lateral */
+    top: 80px; /* Mueve el menú hacia abajo, debajo de la barra de navegación */
+    left: 0;
+    bottom: 0;
+}
+
+.menu-lateral ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
-.project-list li {
-    margin: 10px 0;
+.menu-lateral li {
+    margin-bottom: 10px;
 }
 
-.project-list a {
+.menu-lateral a {
     text-decoration: none;
     color: #333;
     font-size: 1rem;
-    font-weight: bold;
 }
 
-.project-list a:hover {
+.menu-lateral a:hover {
     color: #555;
     font-style: italic;
 }
 
-
-/* Estilo para la sección de contacto */
-#contact {
-    padding: 40px 20px;
+/* Footer */
+/* Pie de página común */
+footer {
+    background-color: #f4f4f4;
+    padding: 0px;
     text-align: center;
+    color: #777;
+    font-size: 0.9rem;
+    position: fixed;  /* Fija el footer al final de la ventana */
+    bottom: 0;        /* Asegura que esté en la parte inferior */
+    left: 0;
+    width: 100%;      /* Hace que el footer ocupe todo el ancho */
+   
 }
 
-#contact h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-/* Estilo para el formulario */
-form {
+/* Layout */
+.container {
     display: flex;
-    flex-direction: column;
-    align-items: left;
-    gap: 10px;
-    max-width: 600px;
-    margin: 0 auto;
+    flex: 1;
 }
 
-form label {
-    font-size: 1.1rem;
-    margin-bottom: 5px;
+
+
+/* Estilos para las redes sociales */
+.redes-sociales {
+    position: absolute;
+    top: 100px; /* Ajusta la distancia desde la parte superior de la página */
+    left: 20px; /* Ajusta la distancia desde el borde izquierdo */
+    display: flex; /* Organiza los elementos en línea horizontal */
+    gap: 20px; /* Espaciado entre los elementos */
+    list-style: none; /* Elimina el punto delante de los textos */
+    align-items: center; /* Centra verticalmente los elementos en la línea */
 }
 
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+.redes-sociales a {
     font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #555;
-}
-
-/* Estilo para la lista de redes sociales */
-#social-media {
-    padding: 40px 20px;
-    text-align: left;
-}
-
-#social-media h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-ul.social-links {
-    list-style: none;
-    padding: 0;
-}
-
-ul.social-links li {
-    display: inline;
-    margin-right: 15px;
-}
-
-ul.social-links a {
-    text-decoration: none;
-    font-size: 1.2rem;
     color: #333;
+    margin: 20px;
+    text-decoration: none;
+    transition: color 0.3s, font-style 0.3s; /* Transiciones suaves */
 }
 
-ul.social-links a:hover {
-    color: #007BFF; /* Color al pasar el ratón sobre el enlace */
+.redes-sociales a:hover {
+    color: #555; /* Cambia el color al pasar el cursor */
+    font-style: italic; /* Cambia el estilo a cursiva */
 }
+

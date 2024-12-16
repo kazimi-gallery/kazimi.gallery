@@ -7,18 +7,52 @@
     <title>Proyectos - Kazimi Gallery</title>
 
     <link rel="icon" href="iconofav/faviconkazimi.png" type="image/png">
-    <link rel="icon" href="iconofav/faviconkazimi.jpg" type="image/jpg">
-
     <link href="https://fonts.googleapis.com/css2?family=Lekton&display=swap" rel="stylesheet">
     <link href="estilos.css" rel="stylesheet">
+
+    <style>
+        /* Contenedor principal, para asegurar que el layout no se solape con el menú lateral */
+        .container {
+            display: flex;
+            min-height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+        }
+
+        /* Menú lateral */
+        .menu-lateral {
+            width: 300px; /* Ancho del menú lateral */
+            background-color: none;
+            padding: 20px;
+            position: fixed; /* Fija el menú lateral */
+            top: 80px; /* Mueve el menú hacia abajo, debajo de la barra de navegación */
+            left: 0;
+            bottom: 0;
+        }
+
+        /* Estilo para la imagen principal, comienza después del menú lateral */
+        .proyecto-main-image {
+            flex: 1; /* La imagen ocupa el espacio restante disponible */
+            width: calc(100% - 300px); /* La imagen ocupará todo el ancho disponible menos el ancho del menú lateral */
+            height: 100vh; /* La imagen ocupará toda la altura de la ventana del navegador */
+            object-fit: cover; /* Asegura que la imagen se ajuste sin perder proporciones */
+            margin-left: 300px; /* Mueve la imagen a la derecha, comenzando después del menú lateral */
+        }
+
+        /* Imagen dentro del contenedor */
+        .proyecto-main-image img {
+            width: 100%; /* La imagen se adapta al contenedor */
+            height: 100%; /* La imagen se adapta a la altura del contenedor */
+            object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+        }
+    </style>
 </head>
 <body>
     <header class="header">
-        <h1><a href="index.html">
-            <img src="iconokazimi.jpg" alt="Icono de Kazimi" style="width: 50px; height: auto; margin-right: 10px;">
-            Kazimi Gallery
-        </a></h1>
-
+        <h1>
+            <a href="index.html">
+                <img src="iconokazimi.jpg" alt="Icono de Kazimi" class="header-icon">
+                Kazimi Gallery
+            </a>
+        </h1>
         <nav class="navbar">
             <ul>
                 <li><a href="bio.html">bio</a></li>
@@ -28,50 +62,22 @@
         </nav>
     </header>
 
-    <main>
-        <section id="projects">
-            <h2>proyectos</h2>
-            <h3>proyectos artísticos</h3>
+    <div class="container">
+        <aside class="menu-lateral">
+            <nav>
+                <ul>
+                    <h3> proyectos artísticos </h3>
+                    <li><a href="proyecto1.html">a través del espejo te miro</a></li>
+                    <li><a href="proyecto2.html">archivo 01: fotos de carnet</a></li>
+                    <li><a href="proyecto3.html">archivo 02: escans distorsionados</a></li>
+                </ul>
+            </nav>
+        </aside>
 
-            <!-- Lista de proyectos -->
-            <div class="project-list">
-                <div class="project-item">
-                    <h3><a href="proyecto1.html">titulo de proyecto 1</a></h3>
-                    
-                </div>
-
-                <div class="project-item">
-                    <h3><a href="proyecto2.html">titulo de proyecto 2</a></h3>
-                   
-                </div>
-
-                <div class="project-item">
-                    <h3><a href="proyecto3.html">titulo de proyecto 3</a></h3>
-                    
-                </div>
-      
-            <h3>proyectos de comisariado/gestión cultural</h3>
-
-            <!-- Lista de proyectos -->
-            <div class="project-list">
-                <div class="project-item">
-                    <h3><a href="proyecto4.html">titulo de proyecto 1</a></h3>
-                    
-                </div>
-
-                <div class="project-item">
-                    <h3><a href="proyecto5.html">titulo de proyecto 2</a></h3>
-                   
-                </div>
-
-                <div class="project-item">
-                    <h3><a href="proyecto6.html">titulo de proyecto 3</a></h3>
-                    
-                </div>
-                <!-- Agrega más proyectos según sea necesario -->
-            </div>
-        </section>
-    </main>
+        <main class="proyecto-main-image">
+            <img src="imagenes/proyectos/distorsion.png" class="project-main-image">
+        </main>
+    </div>
 
     <footer>
         <p>&copy; 2024 Kazimi Gallery</p>
